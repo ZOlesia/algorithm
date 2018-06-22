@@ -7,7 +7,7 @@ function findSecondLargeNumber(arr){
 		if(fLargeNum < arr[i]){
 			sLargeNum = fLargeNum;
 			fLargeNum = arr[i];			
-		}else if(sLargeNum < arr[i]){
+		} else if(sLargeNum < arr[i]){
 			sLargeNum = arr[i];
 		}
 	}
