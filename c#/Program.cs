@@ -15,10 +15,12 @@ namespace c_
                 if(str[i] == str[i+1])
                 {
                     count++;
-                } else if (dict.ContainsKey(str[i]) && dict[str[i]] > count)
+                } 
+                else if (dict.ContainsKey(str[i]) && dict[str[i]] > count)
                 {
                     count = 1;
-                } else 
+                } 
+                else 
                 {
                     dict[str[i]] = count;
                     count = 1;
@@ -163,9 +165,93 @@ namespace c_
             return arr;
         }
 
+        static int giveMaxSumS(int[] A)
+        {
+            int max = 0;
+            int max2 = 0;
+            for(int i = 0; i < A.Length; i++)
+            {
+                max = max + A[i];
+                if(max < 0)
+                {
+                    max = 0;
+                } 
+                else if(max2 < max)
+                {
+                    max2 = max;
+                }
+            }
+            return max2;
+        }
+
+        public static void Sort(int[] A, int[] B)
+        {
+            for (int i = 0; i < A.Length; i++)
+            {
+                int pivot = B[i];
+                List<int> left = new List<int>();
+                List<int> right = new List<int>();
+                for (int j = 0; j < A.Length; j++)
+                {
+                    if (A[j] < pivot)
+                    {
+                        left.Add(A[j]);
+                    }
+                    else
+                    {
+                        right.Add(A[j]);
+                    }
+                }
+                A = left.Concat(right).ToArray();
+            }
+            for (int i = 0; i < A.Length; i++)
+            {
+                System.Console.WriteLine(A[i]);
+            }
+        }
+
+        public static void LongSubstring(string A)
+        {
+            int start = 0;
+            int end = 0;
+            Dictionary<char, int> dict = new Dictionary<char, int>();
+            int count = 0;
+            List<char> list = new List<char>();
+            for(int i = 0; i < A.Length; i++)
+            {
+                if(!dict.ContainsKey(A[i]))
+                {
+                    dict[A[i]] = 1;
+                    count++;
+                } else if(dict[A[i]] == 1)
+                {
+                    end = i - 1;
+                    if(count > list.Count)
+                    {
+                        list.Clear();
+                        for(int j = start; j <= end; j++)
+                        {
+                            list.Add(A[j]);
+                            dict.Remove(A[j]);
+                        }
+                    }
+                    count = 1;
+                    start = i;
+                    dict[A[i]] = 1;
+                }
+            }
+            foreach(var letter in list)
+            {
+                System.Console.WriteLine(letter);
+            }
+        } 
+
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string A = "abkdncabceebb";
+            LongSubstring(A);
+            // Console.WriteLine("Hello World!");
             // Console.WriteLine(maxConsecutive("aaaaaabbcbbbbbbbbcbbbb"));
             // int[] A = {1,5,7,12,18,32};
             // int[] B = {2,4,9,16,27,76,98};
@@ -190,12 +276,16 @@ namespace c_
             // int[] A = {9, 29,10, 2, 50, 24, 100};
             // System.Console.WriteLine(findDifferenceNumber(3, A));
             // System.Console.WriteLine(mostRepeatedCharacter("aaabbbbbqqqAAAA"));
-            int[] arr = {1, 2, 6, 12, 1, 0, 4};
-            int[] result = swapEvenNum(arr);
-            foreach(int i in result)
-            {
-                System.Console.WriteLine(i);
-            }
+            // int[] arr = {1, 2, 6, 12, 1, 0, 4};
+            // int[] result = swapEvenNum(arr);
+            // foreach(int i in result)
+            // {
+            //     System.Console.WriteLine(i);
+            // }
+
+            // int[] A = {21, 3, -6, 5, 3, 9, 10};
+            // System.Console.WriteLine(giveMaxSumS(A));
+  
         }
     }
 }     
