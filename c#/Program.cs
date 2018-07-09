@@ -747,9 +747,50 @@ namespace c_
             }
             return false;
         }
+
+        static int FirstUniqChar(string s) {
+            bool check = false;
+            for(int i = 0; i < s.Length; i++)
+            {
+                for(int j = 0; j < s.Length; j++)
+                {
+                    if(s[i] == s[j] && i != j) 
+                    { 
+                        check = true; 
+                        break; 
+                    }
+                    check = false;
+                }
+                if(check == false)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        static int MissingNumber(int[] nums) {
+            var start = nums.Min();
+            var end = nums.Max();
+            bool check = false;
+            for(int i = start; i < end + 1; i++)
+            {
+                for(int j = 0; j < nums.Length; j++)
+                {
+                    if(i == nums[j])
+                    {
+                        check = true;
+                        break;
+                    }
+                    check = false;
+                }
+                if(check == false){return i; }
+            }
+            return -1;
+        }
         static void Main(string[] args)
         {
-            System.Console.WriteLine(ContainsDuplicate(new int[] {1,1,1,3,3,4,3,2,4,2}));
+            System.Console.WriteLine(MissingNumber(new int[] {9,6,4,2,3,5,7,0,1}));
         }
     }
 
