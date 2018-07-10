@@ -399,7 +399,6 @@ namespace c_
                 {
                     str.Append(rom[i], 1);
                     str.Append(rom[i+1], 1);
-                    continue;
                 } 
                 else if( q[i] == 4 && q[i+1] == 1)
                 {
@@ -413,8 +412,7 @@ namespace c_
 
             }
 
-            var result = str.ToString();
-            return result;
+            return str.ToString();
         }
 
         static void GenerateCoin(int num)
@@ -790,9 +788,10 @@ namespace c_
         }
         static void Main(string[] args)
         {
-            System.Console.WriteLine(MissingNumber(new int[] {9,6,4,2,3,5,7,0,1}));
+            System.Console.WriteLine(NumToRom(794));
         }
     }
+
 
 }     
 
