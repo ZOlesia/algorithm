@@ -133,6 +133,7 @@ namespace c_
 
         static int[] swapArray (int[] arr)
         {
+            
             for(int i = 0; i < arr.Length/2; i++)
             {
                 var temp = arr[i];
