@@ -787,13 +787,64 @@ namespace c_
             }
             return -1;
         }
-        static void Main(string[] args)
+
+
+        static int Trap(int[] arr)
         {
-            System.Console.WriteLine(NumToRom(794));
+            int result = 0;
+            int low = 0;
+            int idxMax = 0;
+            int higher = 0;
+            for(int i = 0; i < arr.Length; i++)
+            {
+                if(arr[i] == 0) continue;
+
+                else if(arr[i] >= arr[idxMax])
+                {
+                    if(arr[idxMax] == arr[i] && idxMax + 1 == i)
+                    {
+                        idxMax = i;
+                    } 
+                    else
+                    {
+                        for(int j = idxMax+1; j < i; j++)
+                        {
+                            // if(j == i) break;
+                            higher = arr[i] > arr[idxMax] ? arr[idxMax] : arr[i];
+                            if(higher == 0)
+                            {
+                                result += arr[i];
+                            } 
+                            else 
+                            {
+                                result += higher - arr[j];
+                            }
+                        }
+                        idxMax = i;
+                    }
+                }
+                else
+                {
+                    low = idxMax;
+                }
+
+                if(i == arr.Length-1 && idxMax == low)
+                {
+                    i = idxMax;
+                    idxMax = idxMax + 1;
+                }
+            }
+            return result;
         }
+
+
+
+        // static void Main(string[] args)
+        // {
+        //     System.Console.WriteLine(Trap(new int[]{3, 1, 0, 1, 0, 2, 0, 1}));
+        //     // System.Console.WriteLine(Trap(new int[]{2, 3, 0, 1, 0, 4, 2, 0}));
+        // }
     }
-
-
 }     
 
 

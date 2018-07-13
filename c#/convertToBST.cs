@@ -28,9 +28,5 @@ namespace c_
     }
         
 
-        static void Main ()
-        {
-            
-        }
     }
 }
