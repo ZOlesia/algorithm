@@ -10,6 +10,7 @@ namespace c_
         static char maxConsecutive (string str)
         {
             Dictionary<char, int> dict= new Dictionary<char, int>();
+
             int count = 1;
             for(int i = 0; i < str.Length-1; i++)
             {
@@ -225,7 +226,8 @@ namespace c_
                 {
                     dict[A[i]] = 1;
                     count++;
-                } else if(dict[A[i]] == 1)
+                } 
+                else if(dict[A[i]] == 1)
                 {
                     end = i - 1;
                     if(count > list.Count)
@@ -408,7 +410,7 @@ namespace c_
                 }
                 else
                 {
-                    str.Append(rom[i], q[i]);
+                    str.Append(rom[i], q[i]);  //will add to a string rom[i] value q[i] times
                 }
 
             }
@@ -500,11 +502,8 @@ namespace c_
                         ex = true;
                         break;
                     } 
-                    else
-                    {
                         ex = false;
                         idx--;
-                    }
                 }
 
                 if(ex == false)
@@ -786,55 +785,6 @@ namespace c_
                 if(check == false){return i; }
             }
             return -1;
-        }
-
-
-        static int Trap(int[] arr)
-        {
-            int result = 0;
-            int low = 0;
-            int idxMax = 0;
-            int higher = 0;
-            for(int i = 0; i < arr.Length; i++)
-            {
-                if(arr[i] == 0) continue;
-
-                else if(arr[i] >= arr[idxMax])
-                {
-                    if(arr[idxMax] == arr[i] && idxMax + 1 == i)
-                    {
-                        idxMax = i;
-                    } 
-                    else
-                    {
-                        for(int j = idxMax+1; j < i; j++)
-                        {
-                            // if(j == i) break;
-                            higher = arr[i] > arr[idxMax] ? arr[idxMax] : arr[i];
-                            if(higher == 0)
-                            {
-                                result += arr[i];
-                            } 
-                            else 
-                            {
-                                result += higher - arr[j];
-                            }
-                        }
-                        idxMax = i;
-                    }
-                }
-                else
-                {
-                    low = idxMax;
-                }
-
-                if(i == arr.Length-1 && idxMax == low)
-                {
-                    i = idxMax;
-                    idxMax = idxMax + 1;
-                }
-            }
-            return result;
         }
 
 

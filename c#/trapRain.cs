@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace c_
@@ -87,10 +88,41 @@ namespace c_
 
         }
 
+
+// Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water. Return the max container size.
+
+// Note: You may not slant the container and n is at least 2.
+
+        static int MaxContainer(int[] arr)
+        {
+            int max = 0;
+            if(arr.Length < 2 || arr == null) return max;
+
+            int left = 0;
+            int right = arr.Length - 1;
+            while (left < right)
+            {
+                int area = (right - left) * Math.Min(arr[left], arr[right]); //we need to know width and height in order to calculate area or container 
+
+                max = Math.Max(area, max);
+
+                if(arr[left] < arr[right])
+                {
+                    left++;
+                } 
+                else
+                {
+                    right++;
+                }
+            }
+            return max;
+        }
+
         static void Main(string[] args)
         {
-            System.Console.WriteLine(trapingRainWater(new int[]{3, 2, 1}));
-            System.Console.WriteLine(Trap(new int[]{3, 2, 1}));
+            // System.Console.WriteLine(trapingRainWater(new int[]{3, 2, 1}));
+            // System.Console.WriteLine(Trap(new int[]{3, 2, 1}));
+            System.Console.WriteLine(MaxContainer(new int[]{3, 1, 0, 5}));
         }
 
     }
