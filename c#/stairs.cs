@@ -35,9 +35,7 @@ namespace c_
 //the other way to do it is to use the same concept of fibbonachi
 
 
-        static void Main()
-        {
-            // System.Console.WriteLine(climbingSteps(2));
-        }
     }
 }
+
+
