@@ -34,9 +34,9 @@ namespace c_
 
 
 
-        static void Main(string[] args)
-        {
-            System.Console.WriteLine(isHappy(23));
-        }
+        // static void Main(string[] args)
+        // {
+        //     System.Console.WriteLine(isHappy(23));
+        // }
     }
 }
