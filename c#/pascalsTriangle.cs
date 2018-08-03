@@ -43,9 +43,9 @@ namespace c_
         }
 
 
-        static void Main()
-        {
-            pTriangle(5);
-        }
+        // static void Main()
+        // {
+        //     pTriangle(5);
+        // }
     }
 }
