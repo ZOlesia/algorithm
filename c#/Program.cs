@@ -412,7 +412,6 @@ namespace c_
                 {
                     str.Append(rom[i], q[i]);  //will add to a string rom[i] value q[i] times
                 }
-
             }
 
             return str.ToString();

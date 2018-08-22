@@ -15,7 +15,6 @@ function merge(arr1, arr2){
     if(arr2.length==0){
         arr = arr.concat(arr1);
     }
-    console.log(arr, 'array in the end');
     return arr;
 }
 
@@ -25,9 +24,6 @@ function mergeSort(arr, start=0, end=arr.length-1){
         return [arr[end]];
     }
     var mid = Math.floor((start+end)/2);
-    console.log(arr, 'array in the recursion function');
-    console.log(start, 'start in recursion');
-    console.log(end, 'end in recursion');
     return merge(mergeSort(arr, start, mid), mergeSort(arr, mid+1, end));
 }
 
