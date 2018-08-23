@@ -786,13 +786,50 @@ namespace c_
             return -1;
         }
  
+        static int[] PlusOne(int[] digits)
+        {
+List<int> list = new List<int>(digits);
+        
+            int i = list.Count-1;
+            
+            int count = 0;
+            
+            if(digits[digits.Length-1] == 9)
+            {
+                while(list[i] == 9)
+                {
+                    count++;
+                    if(i ==  0) break;
+                    i--;
+                }
+
+                if(count == digits.Length) 
+                {
+                    list.RemoveRange(i, list.Count);
+                    list.Add(1);
+                }
+                else
+                {
+                    list.RemoveRange(i+1, count);
+                    list[list.Count-1]++;
+                }
+                
+                
+                list.AddRange(Enumerable.Repeat(0, count));
+            }
+            else
+            {
+                list[list.Count-1]++;
+            }
+        
+        return list.ToArray();
+        }
 
 
-        // static void Main(string[] args)
-        // {
-        //     System.Console.WriteLine(Trap(new int[]{3, 1, 0, 1, 0, 2, 0, 1}));
-        //     // System.Console.WriteLine(Trap(new int[]{2, 3, 0, 1, 0, 4, 2, 0}));
-        // }
+        static void Main(string[] args)
+        {
+            // PlusOne(new int[]{5, 5, 9, 9, 9});
+        }
     }
 }     
 
