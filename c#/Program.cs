@@ -810,12 +810,12 @@ List<int> list = new List<int>(digits);
                 }
                 else
                 {
-                    list.RemoveRange(i+1, count);
+                    list.RemoveRange(i+1, count); // will removw values from i index, count - how many items to remove ??
                     list[list.Count-1]++;
                 }
                 
                 
-                list.AddRange(Enumerable.Repeat(0, count));
+                list.AddRange(Enumerable.Repeat(0, count));  // will add 0`s to the end of the list count times 
             }
             else
             {
