@@ -118,30 +118,5 @@ namespace c_
             return max;
         }
 
-        static int[] check(int n)
-        {
-            List<int> result = new List<int>();
-            while (n > 0)
-            {
-                result.Add(n % 10);
-                System.Console.WriteLine("!!!! this is n % 10 that added to the list => " , + (n % 10) );
-                n = n / 10;
-                System.Console.WriteLine("**** this is n / 10 => " +  n);
-            }
-
-            foreach(int i in result)
-            {
-                System.Console.WriteLine(i);
-            }
-            return result.ToArray();
-        }
-        // static void Main(string[] args)
-        // {
-        //     // System.Console.WriteLine(trapingRainWater(new int[]{3, 2, 1}));
-        //     // System.Console.WriteLine(Trap(new int[]{3, 2, 1}));
-        //     System.Console.WriteLine(MaxContainer(new int[]{3, 1, 0, 5}));
-        //     System.Console.WriteLine(check(219));
-        // }
-
     }
 }

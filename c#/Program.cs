@@ -116,7 +116,6 @@ namespace c_
             Dictionary<char, int> dict = new Dictionary<char, int>();
             str = str.ToLower();
             System.Console.WriteLine(str);
-            // int count;
             for(int i = 0; i < str.Length; i++)
             {
                 if(!dict.ContainsKey(str[i]))
@@ -159,7 +158,6 @@ namespace c_
                             arr[i] = arr[j];
                             arr[j] = temp;
                             idx = j-1;
-                            System.Console.WriteLine(idx + "IDX IS HERE !!!!!!!");
                             break;
                         }
                     }
@@ -207,10 +205,6 @@ namespace c_
                 }
                 A = left.Concat(right).ToArray();
             }
-            for (int i = 0; i < A.Length; i++)
-            {
-                System.Console.WriteLine(A[i]);
-            }
         }
 
         public static void LongSubstring(string A)
@@ -244,10 +238,6 @@ namespace c_
                     dict[A[i]] = 1;
                 }
             }
-            foreach(var letter in list)
-            {
-                System.Console.WriteLine(letter);
-            }
         } 
 
 
@@ -257,49 +247,33 @@ namespace c_
             string[] words = A.Split(' ');
             Array.Reverse(words);
             A = String.Join(" ", words);
-            System.Console.WriteLine(A);
-
         }
 
 
 
-        // static public List<String> sortedNumAlphabet(int num){
+        static public List<String> sortedNumAlphabet(int num){
             
-        //     List<string> list = new List<string>();
+            List<string> list = new List<string>();
 
-        //     for(int i = 1; i <= num; i++)
-        //     {
-        //         list.Add(i.ToString());
-        //         for(int j = 0; j < 10; j++)
-        //         {
-        //             list.Add(i.ToString() + j.ToString());
-        //             if(i.ToString() + j.ToString() == num.ToString())
-        //             {
-        //                 for(int x = i+1; x < 10; x++)
-        //                 {
-        //                     list.Add(x.ToString());
-        //                 }
-        //                 return list;
-        //             }
-        //         }
-        //     }
-
-
-        // }
-
-        public static void str()
-        {
-            string str = "asdfg";
-            StringBuilder newstr = new StringBuilder(str);
-            // for(int i = 0; i < newstr.Length; i++)
-            // {
-            //     System.Console.WriteLine(newstr[i]);
-            // // }
-            string q = newstr.ToString();
-            System.Console.WriteLine(q);
-
+            for(int i = 1; i <= num; i++)
+            {
+                list.Add(i.ToString());
+                for(int j = 0; j < 10; j++)
+                {
+                    list.Add(i.ToString() + j.ToString());
+                    if(i.ToString() + j.ToString() == num.ToString())
+                    {
+                        for(int x = i+1; x < 10; x++)
+                        {
+                            list.Add(x.ToString());
+                        }
+                        return list;
+                    }
+                }
+            }
+            return list;
         }
-    
+
 
             static bool OneAway(string str1, string str2)
         {
@@ -480,10 +454,6 @@ namespace c_
                     result.Add(i.ToString());
                 }
             }
-            foreach(var i in result)
-            {
-                System.Console.WriteLine(i);
-            }
             return result;
         }
 
@@ -559,10 +529,6 @@ namespace c_
                         }
                     }
                 }
-            }
-            for(int i = 0; i < nums.Length; i++)
-            {
-                System.Console.WriteLine(nums[i]);
             }
         }
 

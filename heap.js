@@ -1,6 +1,5 @@
 function Heap(){
     this.arr = [0];
-
 }
 
 Heap.prototype.Add = function(val){
@@ -20,6 +19,7 @@ Heap.prototype.Add = function(val){
     }
     return this.arr;
 }
+
 
 Heap.prototype.RAdd = function(val, idx = this.arr.length, p = Math.floor(idx/2), x = false){
     if(x == false){

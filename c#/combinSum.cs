@@ -36,9 +36,5 @@ namespace c_
                 combination.RemoveAt(combination.Count-1);
             }
         }
-        // static void Main()
-        // {
-        //     combSum(new int[]{1, 2}, 3);
-        // }
     }
 }

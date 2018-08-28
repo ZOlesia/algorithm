@@ -31,12 +31,5 @@ namespace c_
             }
             return sum;
         }
-
-
-
-        // static void Main(string[] args)
-        // {
-        //     System.Console.WriteLine(isHappy(23));
-        // }
     }
 }

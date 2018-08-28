@@ -26,10 +26,8 @@ function RBS(val, arr, start = 0, end = arr.length-1){
     }
 
     else if(val > arr[p]){
-        // console.log(val,arr, p+1,end,p + "first if check");
         return RBS(val, arr, p+1, end);
     } else if(val < arr[p]){
-        // console.log(val, arr, start, p-1, p + "seconds if");
         return RBS(val, arr, start, p-1);
     } 
     

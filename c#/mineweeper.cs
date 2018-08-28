@@ -51,10 +51,5 @@ namespace c_
             }
             return grid;
         }
-
-        // static void Main(string[] args)
-        // {
-        //     System.Console.WriteLine(mineW(10, 10, 99));
-        // }
     }
 }

@@ -41,11 +41,5 @@ namespace c_
             return results;
 
         }
-
-
-        // static void Main()
-        // {
-        //     pTriangle(5);
-        // }
     }
 }

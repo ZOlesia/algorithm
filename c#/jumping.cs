@@ -26,12 +26,6 @@ namespace c_
             return true;
                 
         }
-
-
-        // static void Main()
-        // {
-        //     System.Console.WriteLine(CanJump(new int[]{3,2,1,0,4}));
-        // }
     }
 }
 
