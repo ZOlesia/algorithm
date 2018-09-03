@@ -844,18 +844,36 @@ namespace c_
                     palindrome.Clear();
                 }
             }
-
             return dict.FirstOrDefault(x => x.Value == dict.Values.Max()).Key;
         }
 
+        public static int RemoveDuplicates(int[] nums) {
+            if(nums.Length == 0) return 0;
+            if(nums.Length == 1) return 1;
+            var idx = 1;
+            var count = 0;
+            while(idx <= nums.Length-1)
+            {
+                if(nums[count] != nums[idx])
+                {
+                    count++;
+                    nums[count] = nums[idx];
+                }
+                
+                
+                idx++;
+                if(idx > nums.Length-1) break;
+            }
+            
+            return count;
+        }
 
 
         static void Main(string[] args)
         {
-            System.Console.WriteLine(LongestPalindrome("momredder"));
+            System.Console.WriteLine(RemoveDuplicates(new int[] {1, 1, 2}));
         }
     }
 }     
-
 
 
