@@ -812,11 +812,47 @@ namespace c_
             return result.ToString();
         }
 
+        static string LongestPalindrome(string str)
+        {
+            int count = 0, left = 0, right = 0;
+            var dict = new Dictionary<string, int>();
+            var palindrome = new StringBuilder();
+            for(int i = 1; i < str.Length-1; i++)
+            {
+                if(str[i-1] == str[i+1] || str[i] == str[i+1])
+                {
+                    if(str[i] == str[i+1])
+                    {
+                        palindrome.Append(str[i], 2);
+                        count = 2; left = i-1; right = i+2;
+                    }
+                    else
+                    {
+                        palindrome.Append(str[i]);
+                        count = 1; left = i-1; right = i+1;
+                    }
+                    while(str[left] == str[right])
+                    {
+                        palindrome.Insert(0, str[left]);
+                        palindrome.Append(str[right]);
+                        count+=2; 
+                        if(right == str.Length-1 || left == 0) break;
+                        left--; right++;
+
+                    }
+                    dict[palindrome.ToString()] = count;
+                    palindrome.Clear();
+                }
+            }
+
+            return dict.FirstOrDefault(x => x.Value == dict.Values.Max()).Key;
+        }
+
 
 
         static void Main(string[] args)
         {
-            System.Console.WriteLine(InterviewAlgor("ABCA"));
+            System.Console.WriteLine(LongestPalindrome("momredder"));
         }
     }
 }     
