@@ -6,7 +6,6 @@ function merge(arr1, arr2){
         } else{
             arr.push(arr2.shift());
         }
-        console.log(arr, 'inside while loop');
     }
 
     if(arr1.length==0){

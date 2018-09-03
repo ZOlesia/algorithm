@@ -754,7 +754,7 @@ namespace c_
  
         static int[] PlusOne(int[] digits)
         {
-List<int> list = new List<int>(digits);
+            List<int> list = new List<int>(digits);
         
             int i = list.Count-1;
             
@@ -791,10 +791,32 @@ List<int> list = new List<int>(digits);
         return list.ToArray();
         }
 
+        static string InterviewAlgor(string str)
+        {
+            var count = 1;
+            StringBuilder result = new StringBuilder();
+            result.Append(str[0]);
+            for(int i = 1; i < str.Length; i++)
+            {
+                if(str[i-1] != str[i])
+                {
+                    result.Append(count);
+                    result.Append(str[i]); 
+                    count = 0;            
+                }
+
+                count++;
+
+                if(i == str.Length-1) result.Append(count);
+            }
+            return result.ToString();
+        }
+
+
 
         static void Main(string[] args)
         {
-            // PlusOne(new int[]{5, 5, 9, 9, 9});
+            System.Console.WriteLine(InterviewAlgor("ABCA"));
         }
     }
 }     

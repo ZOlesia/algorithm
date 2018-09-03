@@ -19,4 +19,4 @@ function quickSort(arr){
     return quickSort(left).concat(piv).concat(quickSort(right));
 }
 
-console.log(quickSort([5, 0, 89, 3, 100, 1]));
+console.log(quickSort([5, 0, 89, 3, 100, 1])); 

@@ -7,7 +7,7 @@ namespace c_
     {
         static bool iSValid(string str)
         {
-            Dictionary<char, char> parent = new Dictionary<char, char>{
+            Dictionary<char, char> parent = new Dictionary<char, char>(){
                 {'{', '}'},
                 {'[', ']'},
                 {'(', ')'}

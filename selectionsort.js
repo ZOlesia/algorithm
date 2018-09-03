@@ -17,3 +17,7 @@ function selectionSort(arr){
     console.log(arr);
     return arr;
 }
+
+
+
+
