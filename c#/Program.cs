@@ -869,9 +869,38 @@ namespace c_
         }
 
 
+        static int TrailingZeroes(int n)
+        {
+            var count = 0;
+            if(n == 1 || n == 0) return n;
+
+            var num = 1;
+
+            for(int i = n; i >= 1; i--)
+            {
+                num *= i ;
+            }
+
+            while(num != 1)
+            {
+                if(num % 10 == 0) count ++;
+                num /= 10;
+            }
+
+            return count;
+                // int count = 0;
+                // while (n > 0)
+                // {
+                //     count += n/5;
+                //     n /= 5;
+                // }
+                
+                // return count;
+
+        }
         static void Main(string[] args)
         {
-            System.Console.WriteLine(RemoveDuplicates(new int[] {1, 1, 2}));
+            System.Console.WriteLine(TrailingZeroes(3));
         }
     }
 }     
