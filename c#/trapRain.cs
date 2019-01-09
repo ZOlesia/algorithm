@@ -112,7 +112,7 @@ namespace c_
                 } 
                 else
                 {
-                    right++;
+                    right--;
                 }
             }
             return max;
@@ -120,3 +120,4 @@ namespace c_
 
     }
 }
+

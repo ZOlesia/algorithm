@@ -28,4 +28,41 @@ function mergeSort(arr, start=0, end=arr.length-1){
 
 
 
-console.log(mergeSort([64, 1, 77, 3, 56, -9]));
+
+function MergeArr(nums1,  m,  nums2,  n) {
+        
+    if(m + n > nums1.Length) return 10;
+    
+    var holder = 0;
+    var j = 0;
+    
+    for(var i = 0; i < nums1.length; i++)
+    {
+        if((nums2[j] > nums1[i] && nums2[j] <= nums1[i+1]) || nums2[j] < nums1[i])
+        {
+            if(nums1[i] == 0) 
+            {
+                nums1[i] = nums2[j];
+                j++;
+            }
+            
+            holder = nums1[i+1];
+            
+            while(holder < nums1.Length)
+            {
+                if(nums1[holder] == 0) 
+                {
+                    nums1[holder] = nums1[i];
+                    break;
+                }
+            }
+            
+            nums1[i] = nums2[j];
+            j++;
+        }
+        
+        if(j >= nums2.Length) return 20;
+    }
+
+}
+     MergeArr([1,2,3,0,0,0], 3, [2, 5, 6], 3);

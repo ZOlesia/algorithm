@@ -13,9 +13,10 @@ namespace c_
             }
         }
 
-    public class BinaryTree{
+    public class BinaryTree
+    {
         public Node root;
-        public static Node SortedArrayToBST(int []arr, int start, int end)
+        public static Node SortedArrayToBST(int[] arr, int start, int end)
         {
             if(start > end) {return null; }
 

@@ -20,7 +20,7 @@ namespace c_
             return results;
         }
 
-        static void findCombinations(List<List<int>> results, List<int> combination, int[]candidates, int target, int startIdx)
+        static void findCombinations(List<List<int>> results, List<int> combination, int[] candidates, int target, int startIdx)
         {
             if(target == 0) 
             {

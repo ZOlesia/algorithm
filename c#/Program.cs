@@ -121,7 +121,8 @@ namespace c_
                 if(!dict.ContainsKey(str[i]))
                 {
                     dict[str[i]] = 1;
-                } else 
+                } 
+                else 
                 {
                     dict[str[i]] += 1;
                 }
@@ -859,12 +860,9 @@ namespace c_
                     count++;
                     nums[count] = nums[idx];
                 }
-                
-                
                 idx++;
                 if(idx > nums.Length-1) break;
             }
-            
             return count;
         }
 
@@ -898,9 +896,10 @@ namespace c_
                 // return count;
 
         }
+
         static void Main(string[] args)
         {
-            System.Console.WriteLine(TrailingZeroes(3));
+
         }
     }
 }     
