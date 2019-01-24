@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\56ole\\Documents\\DOJO\\DojoAssignments\\algorithms\\c#\\c#.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
