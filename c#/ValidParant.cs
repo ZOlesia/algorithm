@@ -1,11 +1,10 @@
 using System.Collections.Generic;
-using System.Linq;
 
 namespace c_
 {
-    public class ValidPar
+    public class ValidParant
     {
-        static bool iSValid(string str)
+        public bool iSValidParant(string str)
         {
             Dictionary<char, char> parent = new Dictionary<char, char>(){
                 {'{', '}'},
@@ -34,12 +33,5 @@ namespace c_
             if(charArr.Count > 0) return false;
             return true;
         }
-
-
-        // static void Main(string[] args)
-        // {
-        //     System.Console.WriteLine(iSValid("[([]])"));
-        //     // System.Console.WriteLine(Trap(new int[]{2, 3, 0, 1, 0, 4, 2, 0}));
-        // }
     }
 }

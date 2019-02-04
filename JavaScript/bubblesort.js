@@ -1,4 +1,4 @@
-function bubbleSort(arr){
+function bubbleSort(arr, j=0){
     for(var i = 0; i < arr.length; i++){
         for(var j = 0; j < arr.length; j++){
             if(arr[j+1] < arr[j]){
@@ -11,3 +11,4 @@ function bubbleSort(arr){
     console.log(arr);
     return arr;
 }
+

@@ -14,4 +14,3 @@ function findSecondLargeNumber(arr){
 	return sLargeNum;
 }
 
-console.log(findSecondLargeNumber([15, 1, 0, 20]));
