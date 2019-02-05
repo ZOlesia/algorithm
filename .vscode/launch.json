@@ -28,7 +28,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/c#/bin/Debug/netcoreapp2.1/c#.dll",
+            "program": "${workspaceFolder}/Crackin The Coding Interview/StringsArrays/bin/Debug/netcoreapp2.1/StringsArrays.dll",
             "args": [],
             "cwd": "${workspaceFolder}/c#",
             // For more information about the 'console' field, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
