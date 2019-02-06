@@ -682,11 +682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\56ole\\Documents\\DOJO\\DojoAssignments\\algorithms\\Crackin The Coding Interview\\LinkedLists\\LinkedLists.csproj",
-      "projectName": "LinkedLists",
-      "projectPath": "C:\\Users\\56ole\\Documents\\DOJO\\DojoAssignments\\algorithms\\Crackin The Coding Interview\\LinkedLists\\LinkedLists.csproj",
+      "projectUniqueName": "C:\\Users\\56ole\\Documents\\DOJO\\DojoAssignments\\algorithms\\Crackin The Coding Interview\\LL\\LL.csproj",
+      "projectName": "LL",
+      "projectPath": "C:\\Users\\56ole\\Documents\\DOJO\\DojoAssignments\\algorithms\\Crackin The Coding Interview\\LL\\LL.csproj",
       "packagesPath": "C:\\Users\\56ole\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\56ole\\Documents\\DOJO\\DojoAssignments\\algorithms\\Crackin The Coding Interview\\LinkedLists\\obj\\",
+      "outputPath": "C:\\Users\\56ole\\Documents\\DOJO\\DojoAssignments\\algorithms\\Crackin The Coding Interview\\LL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
