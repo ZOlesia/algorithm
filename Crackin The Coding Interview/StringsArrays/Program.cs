@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Collections;
 
 namespace StringsArrays
 {
@@ -121,11 +122,13 @@ namespace StringsArrays
             }
             return matrix;
         }
+
         static void Main(string[] args)
         {
             // var arr = new int[4,4] { {1,3,8,0}, {2,7,1,3}, {0,2,0,1}, {6,7,9,1} };
             // Console.WriteLine(ZeroMatrix(arr));
-            System.Console.WriteLine(StringRotation("waterbottle", "erbottlewat"));
+            // System.Console.WriteLine(StringRotation("waterbottle", "erbottlewat"));
+
         }
     }
 }

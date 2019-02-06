@@ -1,0 +1,4 @@
+C:\Users\56ole\Documents\DOJO\DojoAssignments\algorithms\Crackin The Coding Interview\LinkedLists\obj\Debug\netcoreapp2.1\LinkedLists.csprojAssemblyReference.cache
+C:\Users\56ole\Documents\DOJO\DojoAssignments\algorithms\Crackin The Coding Interview\LinkedLists\obj\Debug\netcoreapp2.1\LinkedLists.csproj.CoreCompileInputs.cache
+C:\Users\56ole\Documents\DOJO\DojoAssignments\algorithms\Crackin The Coding Interview\LinkedLists\obj\Debug\netcoreapp2.1\LinkedLists.AssemblyInfoInputs.cache
+C:\Users\56ole\Documents\DOJO\DojoAssignments\algorithms\Crackin The Coding Interview\LinkedLists\obj\Debug\netcoreapp2.1\LinkedLists.AssemblyInfo.cs
