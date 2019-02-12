@@ -352,7 +352,17 @@ namespace c_
 //         return resultstr; 
 //     }
 
-
+            // int[] nums = {1, 5, 10, 50};
+            // char[] rom = {'I', 'V', 'X', 'L'};
+            // int result;
+            // for(int i = rom.length-1; i > 0; i--)
+            // {
+            //     if(n / nums[i] > 0)
+            //     {
+            //         result.add(rom[i] times n / nums[i]);
+            //         n = n % nums[i];
+            //     }
+            // }
 
         static string NumToRom(int num)
         {
@@ -623,6 +633,18 @@ namespace c_
                 }
             }
             return sum;
+
+            // for(int i = 0; i < s.Length; i++)
+            // {
+            //     if((s[i] == "I" && s[i+1] != "I") || (s[i] == "X" && s[i+1] != "X"))
+            //     {
+            //         sum -= roman[s[i]];
+            //     }
+            //     else
+            //     {
+            //         sum += roman[s[i]];
+            //     }
+            // }
         }
 
         static int maxProfit(int[] prices) {
