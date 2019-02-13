@@ -7,114 +7,116 @@ namespace LL
 {
     class Program
     {
-        // public class Node
-        // {
-        //     Node next = null;
-        //     int data;
-        //     public Node(int d){
-        //         next = d;
-        //     }
-        // }
+        public class Node
+        {
+            public Node next;
+            public int data;
+            public Node(int x) { data = x; }
 
-        // public static void RemoveDups(LinkedListNode n){
-        //     LinkedListNode previous = null;
-        //     var arr = new HashSet<int>();
-        //     while(n != null){
-        //         if(arr.Contains(n.data)){
-        //             previous.next = n.next;
-        //         }
-        //         else{
-        //             arr.Add(n.data);
-        //             previous = n;
-        //         }
-        //         n = n.next;
-        //     }
-        // }
+        }
 
-        // public static LinkedListNode NthToLast(LinkedListNode head, int k){
-        //     var current = head;
-        //     var follower = head;
-        //     var count = 0;
-        //     while(current.Next != null){
-        //         if(count != k){
-        //             count++;
-        //         } else if(count == k){
-        //             follower = follower.Next;
-        //         }
-        //         current = current.Next;
-        //     }
-        //     return follower;
-        // }
+        public static void RemoveDups(Node n){
+            Node previous = null;
+            var arr = new HashSet<int>();
+            while(n != null){
+                if(arr.Contains(n.data)){
+                    previous.next = n.next;
+                }
+                else{
+                    arr.Add(n.data);
+                    previous = n;
+                }
+                n = n.next;
+            }
+        }
 
-        // public static bool DeleteMiddleNode(LinkedListNode node){
-        //     if(node == null) return false;
-        //     if(node.next == null){
-        //         node = null;
-        //         return true;
-        //     }
+        public static LinkedListNode<int> NthToLast(LinkedListNode<int> head, int k){
+            var current = head;
+            var follower = head;
+            var count = 0;
+            while(current.Next != null){
+                if(count != k){
+                    count++;
+                } else if(count == k){
+                    follower = follower.Next;
+                }
+                current = current.Next;
+            }
+            return follower;
+        }
 
-        //     var nextNode = node.next;
-        //     node.data = nextNode.data;
-        //     node.next = nextNode.next;
-        //     return true;
+        public static bool DeleteMiddleNode(Node node){
+            if(node == null) return false;
+            if(node.next == null){
+                node = null;
+                return true;
+            }
 
-        // }
+            var nextNode = node.next;
+            node.data = nextNode.data;
+            node.next = nextNode.next;
+            return true;
 
-        // public static LinkedListNode Partition(LinkedListNode head, int p){
-        //     var runner = head;
-        //     var previous = null;
-        //     while(runner != null){
-        //         if(runner.Value < p){
-        //             var holder = runner;
-        //             previous.next = runner.next;
-        //             holder.next = head.next;
-        //             head.next = holder;
-        //             runner = previous;
-        //         }
-        //         previous = runner;
-        //         runner = runner.next;
-        //     }
-        //     return head;
-        // // }
-        // public static LinkedListNode SumLists(LinkedListNode head1, LinkedListNode head2){
-        //     //get the longest length of the lists
-        //     //I will assume head1 has the longest length
-        //     var r1 = head1;
-        //     var r2 = head2;
+        }
+
+        public static Node Partition(Node head, int p){
+            var runner = head;
+            Node previous = null;
+            while(runner != null){
+                if(runner.data < p){
+                    var holder = runner;
+                    previous.next = runner.next;
+                    holder.next = head.next;
+                    head.next = holder;
+                    runner = previous;
+                }
+                previous = runner;
+                runner = runner.next;
+            }
+            return head;
+         }
+        public static LinkedListNode<int> SumLists(LinkedListNode<int> head1, LinkedListNode<int> head2){
+            //get the longest length of the lists
+            //I will assume head1 has the longest length
+            var r1 = head1;
+            var r2 = head2;
             
-        //     while(r1!=null){
-        //         var increaser = 0;
-        //         var num2 = 0;
-        //         if(r2 != null) num2 = r2.Value;
+            while(r1!=null){
+                var increaser = 0;
+                var num2 = 0;
+                if(r2 != null) num2 = r2.Value;
 
-        //         var sum = r1.Value + num2;
+                var sum = r1.Value + num2;
 
-        //         if(sum > 9){
-        //             var splitNum = GetIntArray(sum);
-        //             increaser = splitNum[1];
-        //             r1.Next.Value += splitNum[1];
-        //         }
+                if(sum > 9){
+                    var splitNum = GetIntArray(sum);
+                    increaser = splitNum[1];
+                    r1.Next.Value += splitNum[1];
+                }
 
-        //         if(increaser == 0 && r2 == null) return r1;
-        //         if(r2 != null) r2 = r2.Next;
+                if(increaser == 0 && r2 == null) return r1;
+                if(r2 != null) r2 = r2.Next;
 
-        //         r1 = r1.Next;
-        //     }
-        //     return r1;
-        // }
-        // public static List<int> GetIntArray(int num)
-        // {
-        //     List<int> listOfInts = new List<int>();
-        //     while(num > 0)
-        //     {
-        //         listOfInts.Add(num % 10);
-        //         num = num / 10;
+                r1 = r1.Next;
+            }
+            return r1;
+        }
+
+        public static List<int> GetIntArray(int num)
+        {
+            List<int> listOfInts = new List<int>();
+            while(num > 0)
+            {
+                listOfInts.Add(num % 10);
+                num = num / 10;
                 
-        //     }
-        //     return listOfInts.Reverse();
-        // }
+            }
+            listOfInts.Reverse();
 
-        public static bool Palindrome(LinkedListNode head){
+            return listOfInts;
+        }
+
+        public static bool Palindrome(LinkedListNode<int> head){
             var faster = head;
             var current = head;
             var isOdd = false;

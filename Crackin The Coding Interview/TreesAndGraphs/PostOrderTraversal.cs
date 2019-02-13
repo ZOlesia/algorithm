@@ -2,7 +2,13 @@ namespace TreesAndGraphs
 {
     public class PostOrderTraversal
     {
-        public static PostOrder(Node node)
+        public class Node
+        {
+            public int data;
+            public Node left, right;
+            public Node(int x) { data = x; }
+        }
+        public static void PostOrder(Node node)
         {
             if(node != null)
             {

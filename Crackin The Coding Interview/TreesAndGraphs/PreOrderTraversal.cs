@@ -2,7 +2,13 @@ namespace TreesAndGraphs
 {
     public class PreOrderTraversal
     {
-        public static PreOrder(Node node)
+        public class Node
+        {
+            public int data;
+            public Node left, right;
+            public Node(int x) { data = x; }
+        }
+        public static void PreOrder(Node node)
         {
             if(node != null)
             {
