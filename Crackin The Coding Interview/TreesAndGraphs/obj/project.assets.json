@@ -477,7 +477,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.2.0": {
-      "sha512": "OK/H8p9Ig6mLMITjXJ4VOewrJg/TU+dAPHE4BdMWMv+8COzBehf7XF1+DofKkmqdHpO2cJoS5Sc9PEZ6PKCbsg==",
+      "sha512": "qIrVLupwT2NYTrf7KM7Nh+mJr36V5MITVRjyGOByVVCwGmQgQmI/6bjZYQv+QdExi4Cm87eCKJX9FdT6nc00Xg==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.2.0",
       "files": [
@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\14435\\.nuget\\packages\\": {},
+    "C:\\Users\\Olesia\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\14435\\Desktop\\algos\\algorithm\\Crackin The Coding Interview\\TreesAndGraphs\\TreesAndGraphs.csproj",
+      "projectUniqueName": "E:\\Dcuments\\DOJO\\Algorithms\\algorithm\\Crackin The Coding Interview\\TreesAndGraphs\\TreesAndGraphs.csproj",
       "projectName": "TreesAndGraphs",
-      "projectPath": "C:\\Users\\14435\\Desktop\\algos\\algorithm\\Crackin The Coding Interview\\TreesAndGraphs\\TreesAndGraphs.csproj",
-      "packagesPath": "C:\\Users\\14435\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\14435\\Desktop\\algos\\algorithm\\Crackin The Coding Interview\\TreesAndGraphs\\obj\\",
+      "projectPath": "E:\\Dcuments\\DOJO\\Algorithms\\algorithm\\Crackin The Coding Interview\\TreesAndGraphs\\TreesAndGraphs.csproj",
+      "packagesPath": "C:\\Users\\Olesia\\.nuget\\packages\\",
+      "outputPath": "E:\\Dcuments\\DOJO\\Algorithms\\algorithm\\Crackin The Coding Interview\\TreesAndGraphs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\14435\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Olesia\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

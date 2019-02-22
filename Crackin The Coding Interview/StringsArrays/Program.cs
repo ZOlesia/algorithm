@@ -123,12 +123,36 @@ namespace StringsArrays
             return matrix;
         }
 
+        public static IList<string> LetterCombinations(string digits) {
+            IList<string> res = new List<string>();
+            string[] mapping = new string[] {"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+            if(digits == "") return res;
+            res.Add("");
+            for(int i=0;i<digits.Length;i++){
+                List<string> temp = new List<string>();
+                foreach(string item in res){
+                    for(int j=0;j<mapping[Convert.ToInt32(digits[i].ToString())].Length;j++){
+                        string tempstring = item + mapping[Convert.ToInt32(digits[i].ToString())][j].ToString();
+                        temp.Add(tempstring);
+                    }
+                }
+                res = temp;
+            }
+
+            for(int i = 0; i < res.Count; i++){
+                System.Console.WriteLine(res[i]);
+            }
+            return res;
+        }
+
+        
+
         static void Main(string[] args)
         {
+            LetterCombinations("234");
             // var arr = new int[4,4] { {1,3,8,0}, {2,7,1,3}, {0,2,0,1}, {6,7,9,1} };
             // Console.WriteLine(ZeroMatrix(arr));
             // System.Console.WriteLine(StringRotation("waterbottle", "erbottlewat"));
-
         }
     }
 }
