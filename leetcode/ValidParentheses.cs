@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace leetcode
 {
     public class ValidParentheses
