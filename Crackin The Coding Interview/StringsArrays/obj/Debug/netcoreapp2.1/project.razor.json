@@ -1,14 +1,6 @@
 {
-  "ProjectFilePath": "e:\\Dcuments\\DOJO\\Algorithms\\algorithm\\Crackin The Coding Interview\\StringsArrays\\StringsArrays.csproj",
+  "ProjectFilePath": "c:\\Users\\v-olzad\\Desktop\\algorithms\\algorithm\\Crackin The Coding Interview\\StringsArrays\\StringsArrays.csproj",
   "TargetFramework": "netcoreapp2.1",
   "TagHelpers": [],
-  "Configuration": {
-    "ConfigurationName": "UnsupportedRazor",
-    "LanguageVersion": "1.0",
-    "Extensions": [
-      {
-        "ExtensionName": "UnsupportedRazorExtension"
-      }
-    ]
-  }
+  "Configuration": null
 }

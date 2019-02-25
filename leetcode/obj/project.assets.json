@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\v-olzad\\Desktop\\algorithms\\algorithm\\Crackin The Coding Interview\\StackAndQueue\\StackAndQueue.csproj",
-      "projectName": "StackAndQueue",
-      "projectPath": "c:\\Users\\v-olzad\\Desktop\\algorithms\\algorithm\\Crackin The Coding Interview\\StackAndQueue\\StackAndQueue.csproj",
+      "projectUniqueName": "C:\\Users\\v-olzad\\Desktop\\algorithms\\algorithm\\leetcode\\leetcode.csproj",
+      "projectName": "leetcode",
+      "projectPath": "C:\\Users\\v-olzad\\Desktop\\algorithms\\algorithm\\leetcode\\leetcode.csproj",
       "packagesPath": "C:\\Users\\v-olzad\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\v-olzad\\Desktop\\algorithms\\algorithm\\Crackin The Coding Interview\\StackAndQueue\\obj\\",
+      "outputPath": "C:\\Users\\v-olzad\\Desktop\\algorithms\\algorithm\\leetcode\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
