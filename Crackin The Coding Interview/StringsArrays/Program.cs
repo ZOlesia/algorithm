@@ -147,12 +147,12 @@ namespace StringsArrays
 
         
 
-        static void Main(string[] args)
-        {
-            LetterCombinations("234");
-            // var arr = new int[4,4] { {1,3,8,0}, {2,7,1,3}, {0,2,0,1}, {6,7,9,1} };
-            // Console.WriteLine(ZeroMatrix(arr));
-            // System.Console.WriteLine(StringRotation("waterbottle", "erbottlewat"));
-        }
+        // static void Main(string[] args)
+        // {
+        //     LetterCombinations("234");
+        //     // var arr = new int[4,4] { {1,3,8,0}, {2,7,1,3}, {0,2,0,1}, {6,7,9,1} };
+        //     // Console.WriteLine(ZeroMatrix(arr));
+        //     // System.Console.WriteLine(StringRotation("waterbottle", "erbottlewat"));
+        // }
     }
 }

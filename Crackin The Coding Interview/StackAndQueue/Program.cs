@@ -27,9 +27,9 @@ namespace StackAndQueue
                 s.Push(tempStack.Pop());
             }
         }
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        // static void Main(string[] args)
+        // {
+        //     Console.WriteLine("Hello World!");
+        // }
     }
 }

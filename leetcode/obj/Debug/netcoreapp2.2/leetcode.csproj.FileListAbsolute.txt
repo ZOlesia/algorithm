@@ -1,0 +1,11 @@
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\bin\Debug\netcoreapp2.2\leetcode.deps.json
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\bin\Debug\netcoreapp2.2\leetcode.runtimeconfig.json
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\bin\Debug\netcoreapp2.2\leetcode.runtimeconfig.dev.json
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\bin\Debug\netcoreapp2.2\leetcode.dll
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\bin\Debug\netcoreapp2.2\leetcode.pdb
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\obj\Debug\netcoreapp2.2\leetcode.csprojAssemblyReference.cache
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\obj\Debug\netcoreapp2.2\leetcode.csproj.CoreCompileInputs.cache
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\obj\Debug\netcoreapp2.2\leetcode.AssemblyInfoInputs.cache
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\obj\Debug\netcoreapp2.2\leetcode.AssemblyInfo.cs
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\obj\Debug\netcoreapp2.2\leetcode.dll
+C:\Users\v-olzad\Desktop\algorithms\algorithm\leetcode\obj\Debug\netcoreapp2.2\leetcode.pdb
