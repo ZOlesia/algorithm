@@ -28,16 +28,6 @@ namespace c_
                 results[i].Add(1);
                 list = new List<int>(results[i]);
             }
-
-            for(int i = 0; i < results.Count; i++)
-            {
-                for(int j = 0; j < results[i].Count; j++)
-                {
-                    System.Console.WriteLine(results[i][j]);
-                    System.Console.WriteLine("*****");
-                }
-                System.Console.WriteLine("the end");
-            }
             return results;
 
         }

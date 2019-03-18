@@ -16,7 +16,6 @@ namespace c_
 
             findCombinations(results, combination, candidates, target, 0);
 
-            System.Console.WriteLine(results.Count);
             return results;
         }
 

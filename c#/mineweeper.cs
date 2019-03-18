@@ -40,15 +40,6 @@ namespace c_
                     }
                 }
             }
-            for(int i = 0; i < h; i++)
-            {
-                for(int j = 0; j < w; j++)
-                {
-                    System.Console.Write(grid[i, j] + ", ");
-
-                }
-                System.Console.WriteLine("\n");
-            }
             return grid;
         }
     }
