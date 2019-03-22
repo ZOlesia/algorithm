@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace leetcode
 {
@@ -38,6 +39,36 @@ namespace leetcode
 
                 return true;
             }
+
+
+
+            // count the minimum number of the meeting rooms
+            // public static int minMeetingRooms(Interval[] intervals){
+            //     if(intervals == null || intervals.Length == 0){
+            //         return 0;
+            //     }
+
+            //     Array.Sort(intervals, (a, b) => a.start - b.start);
+
+            //     Queue<Interval> minHeap = new Queue<Interval>((a, b) => a.end - b.end));  // ((a, b) => a.end - b.end) ---> minHeap by the end values (have to figure it out in C#)
+
+            //     minHeap.Enqueue(intervals[0]);
+
+            //     for(int i = 1; i < intervals.Length; i++){
+            //         var current = intervals[i];
+            //         var eraliest = minHeap.Dequeue();
+
+            //         if(current.start >= eraliest.end){
+            //             eraliest.end = current.end;
+            //         } else {
+            //             minHeap.Enqueue(current);
+            //         }
+
+            //         minHeap.Enqueue(eraliest);
+            //     }
+
+            //     return minHeap.Count;
+            // }
         }
     }
 }
