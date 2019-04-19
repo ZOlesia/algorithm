@@ -75,6 +75,7 @@ namespace LL
             }
             return head;
          }
+
         public static LinkedListNode<int> SumLists(LinkedListNode<int> head1, LinkedListNode<int> head2){
             //get the longest length of the lists
             //I will assume head1 has the longest length
@@ -144,6 +145,34 @@ namespace LL
             return true;
         }
 
+
+    public class TreeNode {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+        public TreeNode(int x) { val = x; }
+    }
+
+    public bool IsBalanced(TreeNode root) {
+        return GetDepth(root) != -1;
+    }
+
+	private int GetDepth(TreeNode root) {
+		if (root == null) { return 0; }
+
+        int left = GetDepth(root.left);
+        int right = GetDepth(root.right);
+
+        if(left == -1 || right == -1 || Math.Abs(left - right) > 1) 
+        {
+            return -1;
+        }
+
+        return Math.Max(left, right) + 1;
+	}
+
+
+
         static void Main(string[] args)
         {
             System.Console.WriteLine(5/2);
@@ -170,3 +199,5 @@ namespace LL
         }
     }
 }
+
+
