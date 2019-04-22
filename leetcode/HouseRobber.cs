@@ -20,7 +20,7 @@ namespace leetcode
             
             
             
-            var dp = new int[nums.Length];
+            var dp = new int[nums.Length];  //keep track of the maximum amount of money can be robbed up to the ith house
             
             dp[0] = nums[0];
             dp[1] = Math.Max(nums[0], nums[1]);
